@@ -1,0 +1,24 @@
+.container{
+    background-color: #d4d2d2;
+    height: max-content;
+}
+.minus1, .plus1{
+    background-color: #a19d9d;
+    cursor: pointer;
+}
+.minus2, .plus2{
+    background-color: #a19d9d;
+    cursor: pointer;
+}
+.minus3, .plus3{
+    background-color: #a19d9d;
+    cursor: pointer;
+}
+
+.adet{
+    width: 8rem;
+}
+
+.canta, .ayakkabi, .saat{
+    height: 10rem;
+}

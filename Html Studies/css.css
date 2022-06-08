@@ -1,0 +1,20 @@
+#paragraf3{
+    background-color: red;
+    color: white;
+    margin: 10px 20px 30px 40px;
+}
+.paragraf6{
+    background-color: darksalmon;
+}
+
+#paragraf7{
+    background-color: red;
+    border: 3px dotted blue;
+    margin: 50px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+*{  /*universal selector*/
+    background-color: whitesmoke;
+}

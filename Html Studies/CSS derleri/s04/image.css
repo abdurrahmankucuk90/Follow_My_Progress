@@ -1,0 +1,70 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./tree.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+}
+/* header.banner .bgimage {
+    background-image: url('./tree.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    z-index: -120;
+} */
+
+header{
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    
+
+}
+
+header h1{
+    padding-top: 40px;
+    font-size: 3rem;
+}
+
+header p{
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.btn{
+    background-color: none;
+    z-index: 10;
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+.box{
+    width: 10vw;
+    min-width: 3rem;
+    max-width: 10rem;
+    background-color: gray;
+
+}
+
+.box:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.box2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

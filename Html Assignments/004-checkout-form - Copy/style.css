@@ -1,0 +1,142 @@
+.main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .main .info {
+    width: 50%;
+    height: 100%;
+    background-color: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem; }
+    .main .info .contact {
+      width: 100%;
+      height: 40%;
+      row-gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgba(255, 0, 0, 0.38);
+      padding: 1rem; }
+    .main .info .box {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: relative;
+      row-gap: 0.3rem; }
+      .main .info .box label {
+        width: 100%; }
+      .main .info .box input {
+        width: 100%;
+        height: 3rem;
+        padding-left: 50px; }
+      .main .info .box i {
+        position: absolute;
+        bottom: 12px;
+        left: 15px; }
+    .main .info .sondiv {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0.2rem;
+      row-gap: 0.3rem; }
+      .main .info .sondiv .country {
+        width: 39%;
+        height: 100%;
+        position: relative; }
+        .main .info .sondiv .country i {
+          position: absolute;
+          left: 15px;
+          bottom: 14px; }
+      .main .info .sondiv .post {
+        width: 60%;
+        height: 100%;
+        position: relative; }
+        .main .info .sondiv .post i {
+          position: absolute;
+          left: 15px;
+          bottom: 14px; }
+      .main .info .sondiv input {
+        width: 100%;
+        height: 3rem;
+        padding-left: 50px; }
+      .main .info .sondiv label {
+        width: 100%;
+        height: 2rem; }
+      .main .info .sondiv select {
+        width: 100%;
+        height: 3rem;
+        padding-left: 50px; }
+    .main .info .shipping {
+      width: 100%;
+      height: 60%;
+      background-color: rgba(0, 0, 255, 0.283);
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      row-gap: 1rem; }
+  .main .shop {
+    width: 50%;
+    height: 100%;
+    background-color: lightpink; }
+
+.main .shop {
+  width: 50%;
+  height: 75%;
+  background-color: lightpink;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap; }
+.main .box2 {
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-wrap: wrap; }
+.main .img {
+  width: 40%;
+  padding: 1rem; }
+.main .adet {
+  width: 60%;
+  padding: 1rem; }
+.main .price {
+  width: 100%;
+  height: 33%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  width: 80rem;
+  height: 70rem;
+  margin: 5rem auto; }
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.footer {
+  width: 100%;
+  height: 10%;
+  background-color: lightcyan; }
+
+/*# sourceMappingURL=style.css.map */

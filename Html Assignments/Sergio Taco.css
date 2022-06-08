@@ -1,0 +1,38 @@
+#header {
+    background-color: black;
+    border-bottom: 5px solid red;
+    height: fit-content;
+    position: fixed;
+    display: flexbox;
+    width: 100%;
+}
+
+#header h1 {
+    color: white;
+}
+
+#spancolor {
+    color: red;
+}
+
+.list {
+
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    
+
+}
+
+.list li{
+    padding: 0px 7px;
+    list-style-type: none;
+}
+
+#main{
+    background-image: linear-gradient(rgb(48, 46, 46), rgb(43, 40, 40)), url(\\wsl$\Ubuntu-20.04\home\abdurrahman\Follow-my-progress\Html Assignments\banner.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(banner.jpg); */
+    background-size: 100%;
+    display: flex;
+} 

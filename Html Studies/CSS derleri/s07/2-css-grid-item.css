@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,20vh) 10vh 5vh 5vh;
+    row-gap: 5px;
+    column-gap: 5px;
+    /* justify-items: center; */
+    
+}
+
+.content{
+    background-color: lightseagreen;
+    border: 1px solid green;
+}
+
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.content1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: lightgoldenrodyellow;
+}
+.content8{
+    /* grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-area: 2/3/span 2/ span 2;
+    background-color: coral;
+}
+.content2{
+    background-color: crimson;
+    /* grid-row: 4/6;
+    grid-column: 2/5; */
+
+    grid-area: 4/2/6/4;
+}
+.content10{
+    background-color: cyan;
+    grid-area: 4/4/6/4;
+    /* grid-area: 6/5/9/3/2/5/5/9/7/4/1; */
+}
+.content9{
+    background-color: chocolate
+    /*! track degil alan olusturuyor span olunca kac birim istiyorsak o kadar ilerliyor */
+    grid-area: 4 / 1 /span 3 / span 3;
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 50vw 150px;
+  grid-template-rows: 100px 500px 20vh 3rem;
+  justify-content: center;
+  /*!Grid'i sayfada dikey hizalamak icin*/
+  /* align-items: center; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
+}
+
+.content {
+  border: 1px solid red;
+  background-color: lightcyan;
+  /*! Grid Container icinde itemlara flex ozelligi kazandirilabilir. boylece align-item vb kullanilabilir */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content1{
+    background-image: url(https://cdn.pixabay.com/photo/2022/05/10/11/12/tree-7186835__480.jpg);
+    background-size: cover;
+}
+.content9{
+    background-color: lightpink;
+}

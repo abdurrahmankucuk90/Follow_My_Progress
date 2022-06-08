@@ -1,0 +1,30 @@
+.container{
+    width: 50%;
+    border: 3px solid black;
+    margin: 0 auto;
+    height: 1500px;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box-blue{
+    background-color: blue;
+    position: sticky;
+    top: 0;
+}
+
+.box-red{
+    background-color: red;
+    /* position: relative; relative to old position, it also thinks that box is in old position*/
+    /* position: absolute; relative to parent element, if you want in container you give position relative to container */
+    /* position: fixed; it doesnt have any parents, always to relative to page itself */
+    /* position: sticky; it acts like relative until vi scrool enough, than start like fixed postion */
+   
+    /* left: 0; */
+    /* z-index: -2; who will show up this is a priority  */
+    
+}

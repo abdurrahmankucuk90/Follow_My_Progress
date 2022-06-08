@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #seker{
+            width: 20%;
+            border: 1px solid red;
+   
+        }
+        #seker2{
+            width: 20%;
+            border: 1px solid red;
+   
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Wellcome to Study</h3>
+    
+    <form action="result.html" method="get">
+
+        <div>
+            <label for="Name">Name</label>
+            <input id="Name" type="text" name="Name" placeholder="Write your name">
+            <br>
+            <label for="Lastname">Lastname</label>
+            <input id="Lastname" type="text" name="Lastname" placeholder="Write your last name" >           
+
+        </div>
+
+        <div>
+            <label for="Sifre">Password</label>
+            <input type="password" name="" id="Sifre">
+        </div>
+
+        <div>
+            <label for="">Cinsiyet</label>
+            <br>
+            <label for="Cinsiyet">Erkek</label>
+            <input type="radio" name="gender" id="Cinsiyet" value="Erkek" checked>
+            <label for="Cinsiyet2">Kadin</label>
+            <input type="radio" name="gender" id="Cinsiyet2" value="Kadin" required>
+
+        </div>
+
+        <div>
+
+            <p>Favorite Animal friends</p>
+
+            <input type="checkbox" name="Animal" id="panda" value="Ayicik">
+            <label for="panda">Panda</label>
+            <input type="checkbox" name="Animal" id="balik" value="Balik">
+            <label for="balik">Balik</label>
+            <input type="checkbox" name="Animal" id="kedi" value="Kedi">
+            <label for="kedi">Kedi</label>
+
+        </div>
+
+        <div>
+
+            <label for="">Age </label>
+            <input type="number" name="girilen_yas" id="yas" max="40" min="18" step="5">
+
+        </div>
+
+        <div>
+
+            <label for="">Search</label>
+            <input type="search" name="arandi" id="search" placeholder="arama...">
+
+        </div>
+
+        <div>
+
+            <label for="color">Renk secin</label>
+            <input type="color" name="Secilen_renk" id="color">
+
+        </div>
+
+        
+
+        <div>
+            <label for="date">Tarih</label>
+            <input type="date" name="secilen_tarih" id="date" max="2022-12-12" min="2021-01-01">
+        </div>
+        <div>
+            <label for="email">Emailinizi giriniz</label>
+            <input type="email" name="Email" id="email">
+        </div>
+
+        <div>
+
+            <label for="file">Dosya Sec</label>
+            <input type="file" name="Secilen dosya" id="file">
+
+        </div>
+
+        <div>
+            <label for="No"> Telefon numarasi</label>
+            <input type="tel" name="tel-no" id="No" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="ex: xxx-xxx-xx-xx">
+
+        </div>
+
+        <hr>
+        <br>
+
+        <div>
+
+            <label for="seker">Hangi tatliyi seversiniz</label>
+            <br>
+            <select name="secilen_tatlilar" id="seker" size="3" multiple>
+
+                <option value="Sutlac">Sutlac</option>
+                <option value="Keskul">Keskul</option>
+                <option value="Supangle">Supangle</option>
+                <option value="Asure">Asure</option>
+                <option value="Gullac">Gullac</option>
+                <option value="Magnolia">Magnolia</option>
+
+            </select>
+
+        </div>
+<hr>
+        <div>
+            <label for="seker2">Hangi tatliyi seversiniz</label>
+            <br>
+            <select name="tatlilar" id="seker2" size="10">
+
+                <optgroup label="Sutlu tatlilar">
+                    <option value="Sutlac">Sutlac</option>
+                    <option value="Keskul">Keskul</option>
+                    <option value="Supangle">Supangle</option>
+                    <option value="Soguk Baklava">Soguk Baklava</option>
+                </optgroup>
+                <optgroup label="Serbetli tatlilar">
+                    <option value="Revani">Revani</option>
+                    <option value="Baklava">Baklava</option>
+                    <option value="Kadayif">Kadayif</option>
+                </optgroup>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="yorum">Yorum</label> <br>
+            <textarea name="girilen_yorum" id="yorum" style="resize: none;width : 75%;" placeholder="lutfen yorum yaziniz"></textarea>
+
+        </div>
+
+        <div>
+
+            <label for="input-browser">Browser:</label>
+            <br>
+            <input type="text" name="kullanilan_browser" id="input-browser" list="browser">
+            <datalist id="browser">  <!--kendi seceneginide girabiliyorsun bu sekilde-->
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+                <option value="Brave"></option>
+            </datalist>
+            
+        </div>
+
+        <div>
+
+            <fieldset>
+
+                <legend>Kisisel Bilgiler</legend>
+                <br>
+                <label for="fname">Adi:</label>
+                <br>
+                <input type="text" name="yeni_isim" id="fname" placeholder="Adiniz...">
+                <label for="flname">SAdi:</llabel>
+                <br>
+                <input type="text" name="yeni_soyisim" id="flname" placeholder="Soy Adiniz...">
+
+
+            </fieldset>
+
+        </div>
+        
+
+        <br><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" name="" id="" value="Reset">
+
+        
+
+    </form>
+
+</body>
+</html>

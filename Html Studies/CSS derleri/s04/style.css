@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+html{
+    /*aksi belirtilmedigi surece 1em = 16px olur*/
+    font-size: 20px;
+}
+
+body{
+    height: 100vh;
+}
+.abs {
+    background-color: aqua;
+    width: 10mm;
+    width: 10cm;
+    width: 100px;
+}
+.div2 {
+    background-color: tomato; /* parent olduğu için bg-color child div3 de boyar*/
+    width: 50%;
+    height: 50%;
+}
+.div3 {
+    background-color: violet;
+    width: 50%;/* parent div2 de width olmazsa bunu uygulamaz*/
+    height: 50%; /* parent div2 de height olmazsa bunu uygulamaz*/
+}
+
+.div4{
+    background-color: yellowgreen;
+    width: 40vw;  /*veiwportu refereans oluyor dolayisiyla parent etkisiz*/
+    height: 20vh; /*tarayici alanin %20si demek*/
+    /*1vw = 1% of viewport width.
+1vh = 1% of viewport height.*/
+
+}
+
+/*! viewport ölçü birimleri parent'ın büyüklüğü ile ilgili değildir. Sadece tarayıcının görülebilir alanına göre oranlama yapar.  */
+
+.div5{
+    font-size: 1em; /*16px*/
+}
+.div6{
+    font-size: 2em; /*32px*/
+}
+.div7{
+    font-size: 3em; /*96px div6nin uc kati, hem parente hem html fontsize bagimli bir birim*/
+}
+
+.div8{
+    font-size: 2rem;
+    
+}
+.div9{
+    font-size: 3rem;  /*sadece html font-sizea gore deger veriyor*/
+}

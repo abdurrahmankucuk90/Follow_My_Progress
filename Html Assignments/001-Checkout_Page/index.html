@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container w-50 mt-5 p-4 rounded-4 row justify-content-center gap-2 mx-auto">
+        <div class="canta row col-12">
+            <img class="rounded-4 col-4" src="./IMG/photo1.png" alt="">
+            <div class="canta-yazi col-6 justify-content-start">
+                <h5>Vintage Backbag</h5>
+                <p>$25.99 <span><s>24.99</s> </span></p>
+                <div class="adet border border-dark rounded-3 row p-2 ms-1 justify-content-around text-center">
+                    <div class="minus1 col-3"><b>-</b></div>
+                    <div class="input1 col-6">0</div>
+                    <div class="plus1 col-3"><b>+</b></div>
+                </div>
+                <button class="remove1 btn btn-danger">Remove</button>
+            </div>
+        </div>
+        <div class="ayakkabi row col-12">
+            <img class="rounded-4 col-4" src="./IMG/photo2.png" alt="">
+            <div class="ayakkabi-yazi col-6 justify-content-start">
+                <h5>Vintage Backbag</h5>
+                <p>$45.99 <span><s>54.99</s> </span></p>
+                <div class="adet border border-dark ms-1 rounded-3 row p-2 justify-content-around text-center">
+                    <div class="minus2 col-3"><b>-</b></div>
+                    <div class="input2 col-6">0</div>
+                    <div class="plus2 col-3"><b>+</b></div>
+                </div>
+                <button class="remove2 btn btn-danger">Remove</button>
+            </div>
+        </div>
+        <div class="saat row col-12">
+            <img class="rounded-4 col-4" src="./IMG/photo2.png" alt="">
+            <div class="saat-yazi col-6 justify-content-start">
+                <h5>Vintage Backbag</h5>
+                <p>$74.99 <span><s>94.99</s> </span></p>
+                <div class="adet border border-dark ms-1 rounded-3 row p-2 justify-content-around text-center">
+                    <div class="minus3 col-3"><b>-</b></div>
+                    <div class="input3 col-6">0</div>
+                    <div class="plus3 col-3"><b>+</b></div>
+                </div>
+                <button class="remove3 btn btn-danger">Remove</button>
+            </div>
+        </div>
+        
+        <div class="price col-12 row">
+            <div class="subtotal col-12 row">
+                <p class="subtotal-s col-6">Subtotal</p>
+                <p class="col-6">$<span class="subtotal-p ">0</span></p>
+            </div>
+            <div class="tax col-12 row">
+                <p class="tax-s col-6">tax(%18)</p>
+                <p class="col-6">$<span class="tax-p ">0</span></p>
+            </div>
+            <div class="shipping col-12 row">
+                <p class="shipping-s col-6">Shipping</p>
+                <p class="col-6">$<span class="shipping-p ">0</span></p>
+            </div>
+            <div class="total col-12 row">
+                <p class="total-s col-6">Total</p>
+                <p class="col-6">$<span class="total-p ">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

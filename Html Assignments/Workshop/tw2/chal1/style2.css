@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+}
+
+
+.baslik{
+    background-color: grey;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+}
+
+.baslik ul{
+    display: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+
+.baslik:hover ul{
+    display: block;
+}

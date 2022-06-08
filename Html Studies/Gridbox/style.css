@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    border: 1px solid black;
+    /* grid-template-columns: 200px 100px; */
+    /* grid-template-columns: 2fr 1fr 3fr; */
+    /* grid-template-columns: repeat(4, 100px);
+    grid-auto-rows: 150px;
+    grid-template-rows: 250px; */
+    /* grid-template-columns: 200px 250px; */
+    /* grid-auto-rows: minmax(150px, auto); */
+    /* grid-row-gap: 10px; */
+    grid-gap: 10px;
+    /* grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "sidebar content"; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    align-content: stretch;
+    /* height: 100vh; */
+    /* justify-items: center; */
+}
+body div div {
+    border: 1px solid black;
+}
+.grid-item1{
+    /* grid-area: header; */
+    /* grid-column: 1 / -1; */
+    /* grid-column: span 2; */
+    /* grid-column-start: 1; */
+    /* grid-column-end: -1; BIRINCI COLUMNUN SONU 2 IKINCI COLUMNUN SONU 3 OLUYOR */
+    height: 30px;
+    grid-column: 1 / -1;
+}
+.grid-item2{
+    /* grid-area: sidebar; */
+    /* grid-row-start: 2; */
+    /* grid-row-end: 4; */
+    height: 50px;
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+}
+.grid-item3{
+    /* grid-area: content; */
+    /* grid-row-start: 2; */
+    /* grid-row-end: 4; */
+}
+/* .grid-item4{
+    grid-area: content;
+}
+.grid-item5{
+    grid-area: content;
+} */

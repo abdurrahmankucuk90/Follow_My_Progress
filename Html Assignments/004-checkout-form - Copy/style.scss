@@ -1,0 +1,40 @@
+@import "info", "shop";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 80rem;
+  height: 70rem;
+  margin: 5rem auto;
+}
+
+
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+
+.footer {
+  width: 100%;
+  height: 10%;
+  background-color: lightcyan;
+}

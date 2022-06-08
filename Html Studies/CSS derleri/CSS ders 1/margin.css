@@ -1,0 +1,28 @@
+.demo {
+    background-color: aqua;
+    width: 80%;
+    margin: 40px 50px
+}
+
+.one {
+
+    background-color: blue;
+    color: white;
+    height: 50px;
+    
+}
+
+.two {
+
+    background-color: yellow;
+    /* height: 50px;
+    width: 50px; */
+    margin: 30px;
+
+}
+
+.three {
+
+    background-color: brown;
+
+}

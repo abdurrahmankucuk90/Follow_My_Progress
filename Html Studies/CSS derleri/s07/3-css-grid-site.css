@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 200px 10vh calc(100% - (200px + 10vh + 10vh)) 10vh ;
+}
+
+header{
+    background-image: url(https://cdn.pixabay.com/photo/2018/07/18/13/05/ecommerce-3546296__340.jpg);
+    grid-column: span 12;
+    background-size: cover;
+    
+}
+
+nav{
+    background-color: lightskyblue;
+    grid-column: span 12;
+}
+
+aside{
+    background-color: lightyellow;
+    grid-column: span 3;
+}
+main{
+    background-color: tomato;
+    grid-column: span 9;
+}
+footer{
+    background-color: turquoise;
+}

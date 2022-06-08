@@ -1,0 +1,30 @@
+.box{
+    border: 1px solid red;
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 10rem;
+}
+
+.box1{
+    overflow: visible; /*default is visible*/
+}
+
+.box2{
+    overflow: hidden;
+}
+
+.box3{
+    overflow: scroll;  /*yazi kisada olsa scrooll gozukuyor*/
+}
+
+.box4{
+    overflow: auto; /*yazikisa ise scroll gozukmuyor*/
+}
+
+.box5{
+    overflow: auto;
+}
+
+.par{
+    width: 80rem;
+}

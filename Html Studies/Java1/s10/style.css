@@ -1,0 +1,11 @@
+.btn, .diller{
+    height: 2.5rem;
+    /* background-color: red; */
+}
+section .diller{
+    width: 20rem;
+}
+
+.red {
+    color: red;  /* bu class ı js de className built in func ile atadık, burda yazdık */
+}

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.container {
+  background-color: yellowgreen;
+  display: flex;
+  /*! Elemanların diziliş yönü : column, row, row-reverse, column-reverse*/
+  flex-direction: row;
+
+  /*? sıkıştırma veya alt satıra geçebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: nowrap;
+
+  /*! Yatay Hizalama: Justify-center
+    /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: space-evenly;
+}
+
+.container div {
+  width: 5rem;
+  height: 5rem;
+  background-color: violet;
+  margin: 1rem;
+}
+.container1 {
+  height: 20rem;
+  background-color: lightcoral;
+  display: flex;
+  gap: 10px 20px;
+  /* justify-content: center; */
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+
+/** bir child element stretch ile container'ın sınırlarına dayandığında child'in içerisindeki içeriği (Örn yazı) yine dikey olarak ortaya hizalamak için nested flex yapısı kullanılabilir*/
+
+.container1 div {
+  width: 5rem;
+  /* height: 5rem; */
+  background-color: lightskyblue;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  height: 20rem;
+  background-color: rgba(0, 255, 128, 0.836);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+  /*!Çok satırlı verilerin dikeyde hizalama için kullanılır.*/
+  align-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  overflow: auto;
+}
+
+ul li {
+  background-color: rgb(205, 186, 102);
+  width: 4rem;
+  height: 4rem;
+}
+
+.container3 {
+  background-color: mediumspringgreen;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* flex-grow: ; */
+}
+.container3 div {
+  background-color: mediumvioletred;
+  width: 5rem;
+  margin: 1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+/*? grow2 classindakilere gore 2 kat daha fazla buyuyecek*/
+div.grow2 {
+  flex-grow: 2;
+}
+div.grow3 {
+  flex-grow: 3;
+}
+
+div.nogrow {
+  flex-grow: 0;
+}
+.container4 {
+  background-color: mediumspringgreen;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* flex-grow: ; */
+}
+.container4 div {
+  background-color: rgb(21, 104, 199);
+  width: 5rem;
+  margin: 1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+div.div1{
+    width: 10%;
+}
+div.div2{
+    width: 20%;
+}
+div.div3{
+    width: 30%;
+}
+div.div4{
+    width: 40%;
+}
