@@ -29,6 +29,8 @@ const getUsers = async () => {
     updateDom(data);
   } catch (err) {
     console.log(err);
+  }finally{
+    //* hata = false lazimsa tabi
   }
 };
 
