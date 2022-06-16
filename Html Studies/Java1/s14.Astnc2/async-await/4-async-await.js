@@ -45,6 +45,7 @@ const updateDom = (data) => {
     
   } else {
     data.forEach((x) => {
+        //!destructioring
       const { login, avatar_url, html_url } = x;
       userDiv.innerHTML += `<h2 class="text-warning">NAME:${login}</h2>
         <img width="40%" src=${avatar_url} alt=""/>
