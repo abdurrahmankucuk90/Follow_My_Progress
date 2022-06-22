@@ -17,7 +17,7 @@ const Content = () => {
   const imgStyle = {
     width: "300px",
     display: "block",
-    margin: "1rem, auto",
+    margin: "1rem auto",
   };
   return (
     <div className="content">
