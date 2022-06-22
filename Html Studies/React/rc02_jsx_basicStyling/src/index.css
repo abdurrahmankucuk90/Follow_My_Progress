@@ -8,6 +8,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header{
-  color: red;
+header {
+  color: rgb(19, 15, 15);
+  text-align: center;
+  background-color: grey;
+  padding: 2rem;
 }
+footer {
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 2rem;
+}
+.content {
+  padding: 2rem;
+  height: calc(100vh - 300px);
+  overflow: auto;
+}
+
+/*! CSS stillendirmeliri yaparken tüm bu stillendirmelerin
+/*! tek bir dosyada birlesecigini unutmamak gerekir. Parent'daki
+/*! bir stil asagidaki stilleri ezebilir. Bunun icin class isimlerinin
+//*! her componente gore ayri ayri verilmesi daha dogru bir yaklasim
+//*! olabilir. Ornegin content-par gibi */
