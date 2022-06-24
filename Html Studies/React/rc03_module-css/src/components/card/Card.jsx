@@ -1,9 +1,13 @@
-import './Card.css'
+import Buton from "../buton/Buton";
+import "./Card.css";
 
 const Card = () => {
   return (
-    <div>Card</div>
-  )
-}
+    <>
+      <div>Card</div>
+      <Buton />
+    </>
+  );
+};
 
-export default Card
+export default Card;
