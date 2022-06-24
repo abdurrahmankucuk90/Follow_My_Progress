@@ -1,8 +1,10 @@
-
+import headerStyle from '../scss/header.module.scss';
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+        <h1 className={headerStyle['title']}>COMMENTS</h1>
+    </header>
   )
 }
 

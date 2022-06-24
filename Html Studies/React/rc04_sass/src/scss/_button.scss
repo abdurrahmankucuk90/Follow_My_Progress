@@ -1,0 +1,23 @@
+@import "./variables";
+
+.btn-container {
+  button {
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &--small {
+    background-color: $olive;
+    padding: 0.8rem;
+    margin-right: 0.3rem;
+  }
+  &--large {
+    background-color: $darkPink;
+    padding: 0.8rem 1.6rem;
+  }
+}

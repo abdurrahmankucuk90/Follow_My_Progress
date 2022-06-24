@@ -1,0 +1,33 @@
+@import "./variables", './button';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  gap: 2rem;
+  // background-color: green;
+  .card {
+    max-width: 400px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding: 1.5rem;
+    img {
+      margin: 1rem;
+      width: 50%;
+      border-radius: 50%;
+    }
+    h1 {
+      color: red;
+    }
+    h2 {
+      color: green;
+    }
+    
+  }
+}
