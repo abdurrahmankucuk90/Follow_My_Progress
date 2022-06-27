@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <Event/>
+      <Counter count={10}/>
       <Counter/>
     </div>
   );

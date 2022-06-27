@@ -17,7 +17,8 @@ class Counter extends Component {
     super(props);
 
     this.state = {
-      count: 0,
+      //   count: props.count ? props.count : 0,
+      count: props.count || 0,
     };
     this.handleInc = this.handleInc.bind(this);
   }
