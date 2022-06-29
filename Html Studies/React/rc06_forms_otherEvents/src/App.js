@@ -4,10 +4,10 @@ import MouseEvent from './components/3-mouseEvents/MouseEvent';
 
 function App() {
   return (
-    <div className="container mt-4 text-center">
+    <div className="container mt-4 text-center h-100">
       <Form />
-      <KeyboardEvents />
-      <MouseEvent />
+      {/* <KeyboardEvents />
+      <MouseEvent /> */}
     </div>
   );
 }
