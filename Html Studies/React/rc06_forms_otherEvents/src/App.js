@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="container mt-4 text-center h-100">
       {/* <Form /> */}
-      <FormObject/>
-      {/* <KeyboardEvents />
-      <MouseEvent /> */}
+      {/* <FormObject/> */}
+      <KeyboardEvents />
+      {/* <MouseEvent /> */}
     </div>
   );
 }
