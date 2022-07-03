@@ -1,6 +1,7 @@
 import React from "react";
-import LifeCycleMethods from "./components/LifeCycleMethods";
+// import LifeCycleMethods from "./components/LifeCycleMethods";
 import { useState } from "react";
+import UseEffectHook from "./components/UseEffectHook";
 
 function App() {
     const [show, setShow] = useState(true);
@@ -12,7 +13,8 @@ function App() {
             </button>
 
             {/* //!CONDITIONAL RENDERING (Show-Circuit) */}
-            {show && <LifeCycleMethods />}
+            {/* {show && <LifeCycleMethods />} */}
+            {show && <UseEffectHook />}
         </div>
     );
 }
