@@ -42,14 +42,30 @@ const UseEffectHook = () => {
     //     }, 3000 )
     // }, []);
 
-
     //!ComponentDidMount + ComponentDidUpdate
+    // useEffect(() => {
+    //     console.log("Mounted + Updated"); //! fetch, async-await, localStorage, setTimeout etc...
+    //     setTimeout(() => {
+    //         alert('Data Fetched')
+    //     }, 1000 )
+    // }, [count]);
+
+
+const fetchData = () => {
+    console.log('data fetched');
+}
+
     useEffect(() => {
-        console.log("Mounted + Updated"); //! fetch, async-await, localStorage, setTimeout etc...
-        setTimeout(() => {
-            alert('Data Fetched')
-        }, 1000 )
-    }, [count]);
+        //!ComponentDidMount
+        const timerId = setInterval(fetchData, 1000);
+        console.log('Mounted');
+
+        return () => {
+            //!ComponentWillUnmount
+            clearInterval(timerId)
+            console.log('Unmounted');
+        };
+    }, []);
 
     // useEffect(() => {
     //     //?ComponentDidMount || ComponentDidUpdate
