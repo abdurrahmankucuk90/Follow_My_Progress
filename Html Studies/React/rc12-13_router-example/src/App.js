@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Instructors from "./pages/Instructors";
 import NotFound from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import InstructorsDetail from './pages/InstructorsDetail'
+import InstructorsDetail from "./pages/InstructorsDetail";
+import { Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <Route path="/instructors/:id" element={<InstructorsDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+
+        {/* burada fonskyon kullanilamadigi icin Navigate componenti kullaniliyor
+        <Route path="/deneme" element={<Navigate to='/'/>} /> */}
         {/* <Instructors /> */}
         {/* <Contact /> */}
         {/* <NotFound /> */}
