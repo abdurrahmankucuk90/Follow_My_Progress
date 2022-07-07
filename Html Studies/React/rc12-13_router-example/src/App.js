@@ -11,6 +11,8 @@ import Paths from "./pages/Paths";
 import FullStack from "./pages/FullStack";
 import Aws from "./pages/Aws";
 import PrivatRouter from "./pages/PrivateRouter";
+
+
 function App() {
   return (
     <>
@@ -31,7 +33,8 @@ function App() {
             <Route path="" element={<Contact />} />
           </Route>
 
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Navigate to='/' />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
