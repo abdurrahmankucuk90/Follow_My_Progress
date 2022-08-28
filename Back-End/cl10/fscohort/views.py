@@ -2,11 +2,17 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .forms import StudentForm
 from .models import Student
+from django.views.generic import TemplateView
+from django.views.generic import ListView
+from django.views.generic import DetailView, CreateView
+from django.urls import reverse_lazy
 # Create your views here.
 
 def home(request):
     return render(request, "fscohort/home.html")
 
+class HomeView(TemplateView):
+    template_name = 'fscohort/home.html'
 
 def student_list(request):
 
@@ -34,6 +40,27 @@ def student_add(request):
     }
 
     return render(request, "fscohort/student_add.html", context)
+
+class StudentListView(ListView):
+    model = Student
+    # default template name : # app/modelname_list.html
+    # this fits our template name no need to use this time
+    # template_name = "fscohort/student_list.html"
+    # context_object_name = 'students' # default context name : object_list
+    # paginate_by = 10
+    # queryset = Student.objects.all() or filter 
+    # get_queryset method for more owerfull filtering ( we can put data into get_context_data method and send template )
+
+
+class StudentDetailView(DetailView):
+    model = Student
+    pk_url_kwarg = 'id'
+class StudentCreateView(CreateView):
+    model = Student
+    form_class = StudentForm
+    template_name = 'fscohort/student_add.html'
+    success_url: reverse_lazy("list")
+
 
 def student_detail(request,id):
     student = Student.objects.get(id=id)
