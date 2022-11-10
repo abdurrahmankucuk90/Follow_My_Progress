@@ -19,7 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('user_example.urls')),
-    path('admin/', admin.site.urls),
+   
     ### And using some urls which Django give us about authentication:
     path('accounts/', include('django.contrib.auth.urls')),
 
